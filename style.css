@@ -19,24 +19,27 @@ header{
   grid-column: span 2;
   font-size: 20px;
   background-color: #fff;
-  padding: 5px;
-  padding-bottom: 10px;
-  margin-bottom: -10px;
+
 }
 .logo{
   background: url(logo/log1.png)no-repeat;
   width: 100px;
   height: 100px;
+  align-items: center;
 }
 .user{
   background: url(logo/aida_seck.jpeg);
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   border-radius: 50px;
+  justify-content: center;
+  align-items: center;
 }
 .connecter{
   margin-left: 10px;
   font-size: 22px;
+  text-align: center;
+  align-items: center;
 }
 .contenue{
   display: grid;
@@ -57,42 +60,36 @@ nav{
   margin: 20px 20px;
   box-shadow: 2px 2px 2px rgb(193, 193, 198);
 }
-.maison{
-  background: url(icone/icons8-damaged-house-32.png) ;
+.maison , .maison1, .maison2, .maison3, .maison4{
   background-size: cover;
   background-repeat: no-repeat;
   padding-right: 35px;
 }
-.maison1{
+.maison{
+  background: url(icone/icons8-damaged-house-32.png) ;
+}
+.maison1 {
   background: url(icone/icons8-personne-femme-50.png) ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-right: 35px;
 }
 .maison2{
   background: url(icone/icons8-livre-ouvert-50.png) ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-right: 35px;
+
 }
 .maison3{
   background: url(icone/icons8-carte-contact-50.png) ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-right: 35px;
 }
 .maison4{
   background: url(icone/icons8-engrenage-50.png) ;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-right: 35px;
 }
 .notre-liste{
   display: flex;
   flex-direction: column;
-  align-items: center;
   list-style-type: none;
-  
+  width: 200px; 
+  text-align: center;
+}
+.fa-solid, .fas {
+  padding: 10px;
 }
 ul.notre-liste {
   padding:20px;
@@ -143,9 +140,11 @@ main{
   height:150;
 }
 img{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+    
 }
 .cours{
   display: grid;
@@ -286,5 +285,16 @@ ul .puce{
   margin: 0;
   padding: 0; 
 }
-
+@media screen and(max-width: 800px) {
+  header{
+    display: grid;
+    grid-template-columns: 200px 1fr 100px 100px;
+    grid-column: span 2;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 5px;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+  }
+}
 
