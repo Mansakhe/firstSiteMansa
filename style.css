@@ -195,7 +195,6 @@ span{
   font-size: 22px;
   font-weight:900;
   color:#009587;
-  
 }
 .titreSec3{
   margin-top: 10px;
@@ -216,7 +215,6 @@ span{
   left: 30px;
   bottom: 45px;
   width: 900px;
-  
 }
 .icone{
   position: relative;
@@ -230,6 +228,7 @@ input{
   width: 780px;
   height: 45px;
   padding-left: 30px;
+  padding-top: 30px;
   border-radius: 30px;
 }
 button{
@@ -287,16 +286,9 @@ ul .puce{
   margin: 0;
   padding: 0; 
 }
-@media screen and(max-width: 800px) {
-  header{
-    display: grid;
-    grid-template-columns: 200px 1fr 100px 100px;
-    grid-column: span 2;
-    font-size: 20px;
-    background-color: #fff;
-    padding: 5px;
-    padding-bottom: 10px;
-    margin-bottom: -10px;
-  }
-}
 
+@media screen and (max-width:800px) {
+
+      
+  
+}
